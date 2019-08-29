@@ -1,0 +1,21 @@
+{
+  "name": "gostackchallenge02",
+  "version": "1.0.0",
+  "description": "Desafio 02 do Bootcamp GoStack",
+  "main": "index.js",
+  "repository": "https://github.com/guilherme-ramalho/gostackchallenge02",
+  "author": "Guilherme Ramalho",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "sequelize": "^5.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1",
+    "sequelize-cli": "^5.5.0",
+    "sucrase": "^3.10.1"
+  },
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  }
+}
