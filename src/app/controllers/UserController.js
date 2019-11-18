@@ -28,7 +28,7 @@ class UserController {
       return response.json(json);
     } catch (error) {
       console.log(error);
-      json = {
+      const json = {
         meta: RestHelper.getMeta(StatusEnum.ERROR, MsgEnum.PROCESSING_ERROR)
       };
 
@@ -36,6 +36,10 @@ class UserController {
 
       return response.status(400).json(json);
     }
+  }
+
+  async update(request, response) {
+    return response.json({ok: true});
   }
 }
 

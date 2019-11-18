@@ -30,7 +30,7 @@ class SessionController {
 
             return response.json(json);
         } catch (error) {
-            json = {
+            const json = {
                 meta: RestHelper.getMeta(StatusEnum.ERROR, MsgEnum.PROCESSING_ERROR)
             };
 
